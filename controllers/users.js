@@ -63,3 +63,11 @@ const deleteUser = async (req, res) => {
       res.status(500).json(response.err || 'Some error occurred while deleting the user');
     }
 };
+
+module.exports = {
+  getAll,
+  getSingle,
+  createUser,
+  updateUser,
+  deleteUser
+};

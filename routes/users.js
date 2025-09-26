@@ -2,15 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 const usersController = require('../controllers/users');
+const { userValidation, validate } = require('../validator');
 
-router.get('/', tasksController.getAllTasks);
+router.get('/', usersController.getAll);
 
-router.get('/:id', tasksController.getSingleTask);
+router.get('/:id', usersController.getSingle);
 
-router.post('/', taskValidation(), validate, tasksController.createTask);
+router.post('/', userValidation(), validate, usersController.createUser);
 
-router.put('/:id', taskValidation(), validate, tasksController.updateTask);
+router.put('/:id', userValidation(), validate, usersController.updateUser);
 
-router.delete('/:id', tasksController.deleteTask);
+router.delete('/:id', usersController.deleteUser);
 
 module.exports = router;
