@@ -2,7 +2,7 @@
 GET http://localhost:8000/users
 
 ### Get user by ID
-GET http://localhost:8000/users/68ca217ca9b80013dde209ee
+GET http://localhost:8000/users/68d4c11b2b092786b60cfe69
 
 ### Create User
 POST http://localhost:8000/users HTTP/1.1
@@ -16,15 +16,15 @@ content-type: application/json
 }
 
 ### Update User
-POST http://localhost:8000/users/68ca22a3a9b80013dde209ef HTTP/1.1
+PUT http://localhost:8000/users/68d60049f33256a6d0510150 HTTP/1.1
 content-type: application/json
 
 {
-    "username": "test1@test.com",
+    "username": "test2@test.com",
     "firstName": "John",
     "lastName": "Doe",
     "email": "test@example.com"
 }
 
-### Delete Contact
-DELETE http://localhost:8000/users/68ca22a3a9b80013dde209ef
+### Delete User
+DELETE http://localhost:8000/users/68d60049f33256a6d0510150
