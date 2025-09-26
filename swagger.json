@@ -258,7 +258,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "userId": {
+                "username": {
                   "example": "any"
                 },
                 "title": {
